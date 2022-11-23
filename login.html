@@ -1,85 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login-page!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <style>
-        body {
-  background: whitesmoke
-}
+      .row {
+        margin: 50px;
+      }
 
-.btn-login {
-  font-size: 0.9rem;
-  letter-spacing: 0.05rem;
-  padding: 0.75rem 1rem;
-}
+      .page-kanan {
+        background: linear-gradient(97.84deg, #1996D2 0.01%, #17D9EF 92.51%);
+      }
 
-.btn-google {
-  color: white !important;
-  background-color: #ea4335;
-}
+      .login-form {
+        height: 100vh;
+      }
+      
+      .header {
+        margin: 0px 0px 0px 0px;
+      }
 
-.btn-facebook {
-  color: white !important;
-  background-color: #3b5998;
-}
+      .header h1 {
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #270A84;
+      }
+
+      .form input {
+        width: 100%;
+        height: 50px;
+
+        background: #FFFFFF;
+        border: 2px solid #270A84;
+        border-radius: 10px;
+      }
+
+      .form .btn {
+        background: linear-gradient(270deg, #17D9EF 1.68%, #1996D2 100%);
+        border-radius: 10px;
+        border: 0px;
+        color: #FFFFFF;
+      }
+      
+      .google button{
+        max-width: 100%;
+        width: 136px;
+        height: 67px;
+        left: 319px;
+        top: 815px;
+
+        background: #FFFFFF;
+        border: 2px solid #270A84;
+        border-radius: 10px;
+      }
+
+      .facebook button{
+        max-width: 100%;
+        width: 136px;
+        height: 67px;
+        left: 319px;
+        top: 815px;
+
+        background: #FFFFFF;
+        border: 2px solid #270A84;
+        border-radius: 10px;
+      }
+
+      .google img {
+        width: 34px;
+        height: 34px;
+        left: 370px;
+        top: 832px;
+      }
+
+      .facebook img {
+        width: 34px;
+        height: 34px;
+        left: 370px;
+        top: 832px;
+      }
+
+      .login-gf {
+        display: flex;
+      }
+
+      p {
+        margin: 15px 0px 15px 0px;
+      }
+
+      a {
+        color: #270A84;
+        text-decoration: none;
+      }
+
+      .btn {
+        font-weight: 700;
+      }
+      
     </style>
-</head>
-<body>
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-          <div class="card border-0 shadow rounded-3 my-5">
-            <div class="card-body p-4 p-sm-5">
-              <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
-              <form>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
-                </div>
-  
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                  <label class="form-check-label" for="rememberPasswordCheck">
-                    Remember password
-                  </label>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
-                    in</button>
-                </div>
-                <hr class="my-4">
-                <div class="d-grid mb-2">
-                  <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
-                    <i class="fab fa-google me-2"></i> Sign in with Google
-                  </button>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
-                    <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
-                  </button>
-                </div>
-              </form>
+  </head>
+  <body>
+    <section class="login-form d-flex">
+      <div class="page-kiri w-50 h-100">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-10">
+            <div class="header">
+              <center>
+              <img src="img/Logo.png" alt="Logo-FitStudee">
+              <h1>Welcome to FitStudee!</h1>
+              </center>
             </div>
+            <div class="form">
+              <br>
+              <label for="emailinput">Email Address</label>
+              <input type="email" class="form-control" id="emailinput" placeholder="Masukkan email">
+              <br>
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+              <p><a href="#"><strong>Forgot your password?</strong></a></p>
+              
+              <br>
+              <a href="index.html">
+                <input class="btn" type="submit" value="Sign In">
+              </a>
+              
+              <br>
+              <center>
+                <p>atau masuk dengan</p>
+              </center>
+            </div>
+    
+            <div class="login-gf justify-content-center align-items-center">
+              <div class="google col-3">
+                <button class="btn btn-link google"><img src="img/icons8-google.svg" alt="Google"></button>
+              </div>
+              <div class="facebook col-3">
+                <button class="btn btn-link facebook"><img src="img/icons8-facebook.svg" alt="Facebook"></button>
+              </div>
+            </div>
+            
+            <br>
+            <center>
+              <p>Belum punya akun?<a href="login-form.html"><strong> Yuk daftar</strong></a></p>
+            </center>
           </div>
         </div>
       </div>
-    </div>
-</body>
+
+      <div class="page-kanan w-50 h-100">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-10">
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>  
+
+  </body>
 </html>
