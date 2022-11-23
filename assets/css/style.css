@@ -446,6 +446,11 @@ h6 {
   background: #0b4f80;
 }
 
+#hero #hero-service-img {
+
+height: 50pt;
+}
+
 #hero .btn-get-started:hover {
   background: #daf0ff;
   color: #0b4f80;
@@ -456,7 +461,7 @@ h6 {
 }
 
 #hero .icon-box {
-  padding: 50px 30px;
+  padding: 30px 20px;
   position: relative;
   overflow: hidden;
   background: #fff;
